@@ -1,0 +1,10 @@
+Jeremiah Orcutt,09/21/2021,24,12,0,Pine,Rush 5 Days,290.
+Jason Bourne,09/21/2021,24,12,1,Laminate,Rush 5 Days,390.Jamaal Crawford,09/21/2021,29,16,1,Rosewood,Rush 7 Days,580.
+Jennifer Lawrence,09/21/2021,36,45,0,Laminate,Rush 3 Days,990.
+Apollo Creed,09/21/2021,30,12,7,Pine,Normal 14 Days,600.
+Michael Jordan,09/21/2021,24,44,2,Veneer,Rush 3 Days,551.
+Alexander Hamilton,09/21/2021,24,17,2,Oak,Normal 14 Days,500.
+Jonathan Tester,09/21/2021,24,12,0,Veneer,Normal 14 Days,325.
+Matt Damon,09/27/2021,24,45,3,Veneer,Rush 5 Days,605.
+Martha Stewart,09/27/2021,68,33,4,Rosewood,Rush 3 Days,2024.
+Alma Younger,10/05/2021,24,47,2,Veneer,Rush 7 Days,588.
