@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -98,13 +99,24 @@ namespace MegaDesk
                 quotePrice = newquote.GetQuote(rush);
                 quotePriceString = quotePrice.ToString();
 
+                //serialize newquote to be passed to the file.
+                string serializedQuote = JsonConvert.SerializeObject(newquote);
+
+                //create file path
+                string file = @"quotes.json";
+
                 //write quote to file
-                string fileString = nameValue + "," + DateTime.Now.ToString("MM/dd/yyyy") + "," + widthValue + "," + depthValue + "," + drawersValue + "," + surfaceValue + "," + rushValue + "," + quotePriceString + ".";
+                //string fileString = nameValue + "," + DateTime.Now.ToString("MM/dd/yyyy") + "," + widthValue + "," + depthValue + "," + drawersValue + "," + surfaceValue + "," + rushValue + "," + quotePriceString + ".";
                 try
                 {
-                    TextWriter file = new StreamWriter(@"quotes.txt", true);
-                    file.WriteLine(fileString);
-                    file.Close();
+                    //creates file if it doesn't already exist (according to: https://stackoverflow.com/questions/10383053/create-file-if-file-does-not-exist)
+                    using (StreamWriter sw = File.AppendText(file))
+                    {
+                        //writes serialized object to JSON file
+                        sw.WriteLine(serializedQuote);
+                    };
+                    
+                   
                 }
                 catch (Exception ex)
                 {
