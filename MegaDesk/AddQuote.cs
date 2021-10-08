@@ -24,6 +24,7 @@ namespace MegaDesk
         public static string quotePriceString = "";
         public static int quotePrice;
         public static int rush;
+        public bool canAccessRushPrices;
         //declared integers for converting from decimals
         public int widthInt;
         public int depthInt;
@@ -41,6 +42,7 @@ namespace MegaDesk
             //populates Surface Material list
             List<DesktopMaterial> SurfaceList = Enum.GetValues(typeof(DesktopMaterial)).Cast<DesktopMaterial>().ToList();
             listBoxSurface.DataSource = SurfaceList;
+            canAccessRushPrices = DeskQuote.GetRushOrder();
         }
 
         //logic for back button click
@@ -54,7 +56,7 @@ namespace MegaDesk
         //logic for handling add quote click
         private void addQuoteBtn2_Click(object sender, EventArgs e)
         {
-            if (widthBool && depthBool && drawersBool)
+            if (widthBool && depthBool && drawersBool && canAccessRushPrices)
             {
                 MessageBox.Show("Your quote has been generated!");
                 DisplayQuotes quote = new DisplayQuotes();
