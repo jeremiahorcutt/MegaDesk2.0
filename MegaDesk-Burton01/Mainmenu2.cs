@@ -69,5 +69,11 @@ namespace MegaDesk_Burton01
         {
             hideSubMenu();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+            Application.Exit();
+        }
     }
 }

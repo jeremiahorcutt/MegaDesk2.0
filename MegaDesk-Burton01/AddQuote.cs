@@ -27,9 +27,11 @@ namespace MegaDesk_Burton01
             openMainMenu.Show(this);
             Hide();
         }
+
         public void validateCustomer(string input)
         {
-            }
+        }
+
         private void customerNameBox_Validating(object sender, CancelEventArgs e)
         {
             customerNameBox.BackColor = default(Color);
@@ -53,9 +55,10 @@ namespace MegaDesk_Burton01
                 desk.Width = Convert.ToInt32(widthBox.Text);
                 desk.Depth = Convert.ToInt32(depthBox.Text);
                 desk.NumberOfDrawers = Convert.ToInt32(drawerBox.Text);
-                desk.SurfaceMaterial = (DesktopMaterial)materialBox.SelectedIndex - 1;
+                desk.SurfaceMaterial = (DesktopMaterial) materialBox.SelectedIndex - 1;
                 desk.CustomerName = customerNameBox.Text;
-                desk.ShippingCost = quote.CalcShipping(Convert.ToInt32(shippingBox.SelectedIndex), desk.Width, desk.Depth);
+                desk.ShippingCost =
+                    quote.CalcShipping(Convert.ToInt32(shippingBox.SelectedIndex), desk.Width, desk.Depth);
                 desk.Date = quote.ShowDate();
                 desk.OversizeCost = quote.CalcOversizeCost(desk.Width, desk.Depth);
                 desk.DrawerCost = quote.CalcDrawerCost(desk.NumberOfDrawers);
@@ -66,7 +69,7 @@ namespace MegaDesk_Burton01
 
                 if (desk.MaterialNotEmpty == -1 || desk.ShippingNotEmpty == -1)
                 {
-                   errorLabel.Text = "Please make sure that all fields are filled or selected!";
+                    errorLabel.Text = "Please make sure that all fields are filled or selected!";
 
                 }
                 else
@@ -79,9 +82,21 @@ namespace MegaDesk_Burton01
 
 
             }
-            catch{
+            catch
+            {
                 errorLabel.Text = "Please make sure that all fields are filled or selected!";
             }
         }
+
+        private void MainMenu2_Click(object sender, EventArgs e)
+        {
+            Mainmenu2 openMainmenu2 = new Mainmenu2();
+            openMainmenu2.Tag = this;
+            openMainmenu2.Show(this);
+            Hide();
+        }
     }
-}
+
+} 
+
+

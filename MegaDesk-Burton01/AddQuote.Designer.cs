@@ -47,6 +47,7 @@ namespace MegaDesk_Burton01
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.currentDate = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.MainMenu2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -219,11 +220,22 @@ namespace MegaDesk_Burton01
             this.label9.TabIndex = 20;
             this.label9.Text = "MegaDesk Add Quote System";
             // 
+            // MainMenu2
+            // 
+            this.MainMenu2.Location = new System.Drawing.Point(564, 259);
+            this.MainMenu2.Name = "MainMenu2";
+            this.MainMenu2.Size = new System.Drawing.Size(138, 23);
+            this.MainMenu2.TabIndex = 21;
+            this.MainMenu2.Text = "Main Menu 2";
+            this.MainMenu2.UseVisualStyleBackColor = true;
+            this.MainMenu2.Click += new System.EventHandler(this.MainMenu2_Click);
+            // 
             // AddQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.MainMenu2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.currentDate);
             this.Controls.Add(this.materialBox);
@@ -271,6 +283,6 @@ namespace MegaDesk_Burton01
         private System.Windows.Forms.Label currentDate;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label errorLabel;
-
+        private System.Windows.Forms.Button MainMenu2;
     }
 }
