@@ -27,7 +27,7 @@ namespace MegaDesk_Burton01
 
         private void viewQuote_Click(object sender, EventArgs e)
         {
-            ViewAllQuotes openViewAllQuotes = new ViewAllQuotes();
+            Mainmenu2 openViewAllQuotes = new Mainmenu2();
             openViewAllQuotes.Tag = this;
             openViewAllQuotes.Show(this);
             Hide();

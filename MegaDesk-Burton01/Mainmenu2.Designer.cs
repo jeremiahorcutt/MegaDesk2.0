@@ -44,6 +44,7 @@ namespace MegaDesk_Burton01
             // 
             // panelSideMenu
             // 
+            this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.panelSideMenu.Controls.Add(this.Help);
             this.panelSideMenu.Controls.Add(this.mediaSubMenuPanal);
@@ -160,6 +161,7 @@ namespace MegaDesk_Burton01
             // 
             // Help
             // 
+            this.Help.AutoSize = true;
             this.Help.Dock = System.Windows.Forms.DockStyle.Top;
             this.Help.Location = new System.Drawing.Point(0, 309);
             this.Help.Name = "Help";
@@ -180,6 +182,7 @@ namespace MegaDesk_Burton01
             this.Name = "Mainmenu2";
             this.Text = "Mainmenu2";
             this.panelSideMenu.ResumeLayout(false);
+            this.panelSideMenu.PerformLayout();
             this.mediaSubMenuPanal.ResumeLayout(false);
             this.ResumeLayout(false);
 
