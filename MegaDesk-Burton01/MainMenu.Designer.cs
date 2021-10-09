@@ -79,12 +79,14 @@ namespace MegaDesk_Burton01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(821, 465);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.searchQuotes);
             this.Controls.Add(this.viewQuote);
             this.Controls.Add(this.addNewQuote);
             this.Name = "MainMenu";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MegaDesk";
             this.ResumeLayout(false);
 

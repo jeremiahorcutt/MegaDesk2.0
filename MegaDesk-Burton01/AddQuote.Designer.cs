@@ -223,7 +223,7 @@ namespace MegaDesk_Burton01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 360);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.currentDate);
             this.Controls.Add(this.materialBox);
@@ -242,6 +242,7 @@ namespace MegaDesk_Burton01
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AddQuote";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddQuote";
             this.Load += new System.EventHandler(this.AddQuote_Load);
             this.ResumeLayout(false);

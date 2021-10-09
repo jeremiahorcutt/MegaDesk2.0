@@ -304,6 +304,7 @@ namespace MegaDesk_Burton01
             this.Controls.Add(this.oversizeCostLabel);
             this.Controls.Add(this.label13);
             this.Name = "DisplayQuote";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DisplayQuotes";
             this.ResumeLayout(false);
             this.PerformLayout();
