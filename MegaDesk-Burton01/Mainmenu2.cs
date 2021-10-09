@@ -15,36 +15,59 @@ namespace MegaDesk_Burton01
         public Mainmenu2()
         {
             InitializeComponent();
-            customizeDesign();
-        }
-        private void customizeDesign()
-        {
-            mediaSubMenuPanal.Visible = false;
+            cutomizeDesign();
         }
 
-        private void mediaButton_Click(object sender, EventArgs e)
+        private void cutomizeDesign()
         {
+            panelMediaSubMenu.Visible = false;
+        }
 
+        private void hideSubMenu()
+        {
+            if (panelMediaSubMenu.Visible == true)
+                panelMediaSubMenu.Visible = false;
+        }
+
+        private void showSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                hideSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible = false;
+            }
+        }
+
+        private void btnMedia_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelMediaSubMenu);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            AddQuote openAddQuote = new AddQuote();
+            openAddQuote.Tag = this;
+            openAddQuote.Show(this);
+            hideSubMenu();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            hideSubMenu();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            hideSubMenu();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            hideSubMenu();
         }
     }
 }
