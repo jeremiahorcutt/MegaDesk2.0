@@ -30,14 +30,14 @@ namespace MegaDesk_Burton01
         private void InitializeComponent()
         {
             this.panelSideMenu = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.mediaButton = new System.Windows.Forms.Button();
-            this.mediaSubMenuPanal = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.Help = new System.Windows.Forms.Button();
+            this.mediaSubMenuPanal = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.mediaButton = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.panelSideMenu.SuspendLayout();
             this.mediaSubMenuPanal.SuspendLayout();
             this.SuspendLayout();
@@ -54,32 +54,19 @@ namespace MegaDesk_Burton01
             this.panelSideMenu.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(250, 562);
+            this.panelSideMenu.Size = new System.Drawing.Size(250, 553);
             this.panelSideMenu.TabIndex = 0;
             // 
-            // panelLogo
+            // Help
             // 
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(250, 100);
-            this.panelLogo.TabIndex = 0;
-            // 
-            // mediaButton
-            // 
-            this.mediaButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.mediaButton.FlatAppearance.BorderSize = 0;
-            this.mediaButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime;
-            this.mediaButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.mediaButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.mediaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mediaButton.ForeColor = System.Drawing.Color.Gainsboro;
-            this.mediaButton.Location = new System.Drawing.Point(0, 100);
-            this.mediaButton.Name = "mediaButton";
-            this.mediaButton.Size = new System.Drawing.Size(250, 45);
-            this.mediaButton.TabIndex = 0;
-            this.mediaButton.Text = "Media";
-            this.mediaButton.UseVisualStyleBackColor = true;
+            this.Help.AutoSize = true;
+            this.Help.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Help.Location = new System.Drawing.Point(0, 309);
+            this.Help.Name = "Help";
+            this.Help.Size = new System.Drawing.Size(250, 40);
+            this.Help.TabIndex = 2;
+            this.Help.Text = "button1";
+            this.Help.UseVisualStyleBackColor = true;
             // 
             // mediaSubMenuPanal
             // 
@@ -93,6 +80,57 @@ namespace MegaDesk_Burton01
             this.mediaSubMenuPanal.Name = "mediaSubMenuPanal";
             this.mediaSubMenuPanal.Size = new System.Drawing.Size(250, 164);
             this.mediaSubMenuPanal.TabIndex = 1;
+            // 
+            // button5
+            // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button5.Location = new System.Drawing.Point(0, 120);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(250, 40);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button4.Location = new System.Drawing.Point(0, 80);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(250, 40);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button3.Location = new System.Drawing.Point(0, 40);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(250, 40);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -111,74 +149,41 @@ namespace MegaDesk_Burton01
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // mediaButton
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button3.Location = new System.Drawing.Point(0, 40);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(250, 40);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.mediaButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.mediaButton.FlatAppearance.BorderSize = 0;
+            this.mediaButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime;
+            this.mediaButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.mediaButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.mediaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mediaButton.ForeColor = System.Drawing.Color.Gainsboro;
+            this.mediaButton.Location = new System.Drawing.Point(0, 100);
+            this.mediaButton.Name = "mediaButton";
+            this.mediaButton.Size = new System.Drawing.Size(250, 45);
+            this.mediaButton.TabIndex = 0;
+            this.mediaButton.Text = "Media";
+            this.mediaButton.UseVisualStyleBackColor = true;
+            this.mediaButton.Click += new System.EventHandler(this.mediaButton_Click);
             // 
-            // button4
+            // panelLogo
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button4.Location = new System.Drawing.Point(0, 80);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(250, 40);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button5.Location = new System.Drawing.Point(0, 120);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(250, 40);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // Help
-            // 
-            this.Help.AutoSize = true;
-            this.Help.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Help.Location = new System.Drawing.Point(0, 309);
-            this.Help.Name = "Help";
-            this.Help.Size = new System.Drawing.Size(250, 40);
-            this.Help.TabIndex = 2;
-            this.Help.Text = "button1";
-            this.Help.UseVisualStyleBackColor = true;
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(250, 100);
+            this.panelLogo.TabIndex = 0;
             // 
             // Mainmenu2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 562);
+            this.ClientSize = new System.Drawing.Size(932, 553);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "Mainmenu2";
             this.Text = "Mainmenu2";
             this.panelSideMenu.ResumeLayout(false);

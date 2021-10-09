@@ -15,9 +15,34 @@ namespace MegaDesk_Burton01
         public Mainmenu2()
         {
             InitializeComponent();
+            customizeDesign();
+        }
+        private void customizeDesign()
+        {
+            mediaSubMenuPanal.Visible = false;
+        }
+
+        private void mediaButton_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
         {
 
         }
