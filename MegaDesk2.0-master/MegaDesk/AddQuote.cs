@@ -207,5 +207,17 @@ namespace MegaDesk
                 return false;
             }
         }
+
+        private void addQuoteBtn21_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MainMenu menu = new MainMenu();
+            this.Close();
+            menu.Show();
+        }
     }
 }
