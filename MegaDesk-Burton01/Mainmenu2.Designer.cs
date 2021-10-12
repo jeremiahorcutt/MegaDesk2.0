@@ -39,8 +39,9 @@ namespace MegaDesk_Burton01
             this.button2 = new System.Windows.Forms.Button();
             this.btnMedia = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelMediaSubMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -70,10 +71,10 @@ namespace MegaDesk_Burton01
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Location = new System.Drawing.Point(0, 365);
+            this.button1.Location = new System.Drawing.Point(0, 310);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(250, 45);
+            this.button1.Size = new System.Drawing.Size(250, 50);
             this.button1.TabIndex = 4;
             this.button1.Text = "Exit";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -88,7 +89,7 @@ namespace MegaDesk_Burton01
             this.panelMediaSubMenu.Controls.Add(this.button3);
             this.panelMediaSubMenu.Controls.Add(this.button2);
             this.panelMediaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMediaSubMenu.Location = new System.Drawing.Point(0, 140);
+            this.panelMediaSubMenu.Location = new System.Drawing.Point(0, 145);
             this.panelMediaSubMenu.Name = "panelMediaSubMenu";
             this.panelMediaSubMenu.Size = new System.Drawing.Size(250, 225);
             this.panelMediaSubMenu.TabIndex = 1;
@@ -100,10 +101,10 @@ namespace MegaDesk_Burton01
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGoldenrod;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button5.Location = new System.Drawing.Point(0, 135);
+            this.button5.Location = new System.Drawing.Point(0, 150);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(250, 45);
+            this.button5.Size = new System.Drawing.Size(250, 50);
             this.button5.TabIndex = 3;
             this.button5.Text = "button5";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -117,10 +118,10 @@ namespace MegaDesk_Burton01
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGoldenrod;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button4.Location = new System.Drawing.Point(0, 90);
+            this.button4.Location = new System.Drawing.Point(0, 100);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(250, 45);
+            this.button4.Size = new System.Drawing.Size(250, 50);
             this.button4.TabIndex = 2;
             this.button4.Text = "Search Quote";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -134,10 +135,10 @@ namespace MegaDesk_Burton01
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGoldenrod;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button3.Location = new System.Drawing.Point(0, 45);
+            this.button3.Location = new System.Drawing.Point(0, 50);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(250, 45);
+            this.button3.Size = new System.Drawing.Size(250, 50);
             this.button3.TabIndex = 1;
             this.button3.Text = "View Quote";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -155,7 +156,7 @@ namespace MegaDesk_Burton01
             this.button2.Location = new System.Drawing.Point(0, 0);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(250, 45);
+            this.button2.Size = new System.Drawing.Size(250, 50);
             this.button2.TabIndex = 0;
             this.button2.Text = "Add Quote";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -174,7 +175,7 @@ namespace MegaDesk_Burton01
             this.btnMedia.Name = "btnMedia";
             this.btnMedia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnMedia.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnMedia.Size = new System.Drawing.Size(250, 45);
+            this.btnMedia.Size = new System.Drawing.Size(250, 50);
             this.btnMedia.TabIndex = 0;
             this.btnMedia.Text = "Start Quote System";
             this.btnMedia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -190,16 +191,6 @@ namespace MegaDesk_Burton01
             this.panelLogo.Size = new System.Drawing.Size(250, 95);
             this.panelLogo.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(336, 119);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(498, 312);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -211,6 +202,26 @@ namespace MegaDesk_Burton01
             this.label1.TabIndex = 2;
             this.label1.Text = "Mega Desk";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(352, 95);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(498, 312);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(347, 394);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(388, 25);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Resolute Desk, The Desk of Presidents";
+            // 
             // Mainmenu2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -218,6 +229,7 @@ namespace MegaDesk_Burton01
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(932, 553);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -232,6 +244,7 @@ namespace MegaDesk_Burton01
             this.panelLogo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -248,5 +261,6 @@ namespace MegaDesk_Burton01
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

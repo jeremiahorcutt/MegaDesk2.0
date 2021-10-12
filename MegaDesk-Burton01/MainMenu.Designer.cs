@@ -33,6 +33,7 @@ namespace MegaDesk_Burton01
             this.viewQuote = new System.Windows.Forms.Button();
             this.searchQuotes = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.MainMenu2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addNewQuote
@@ -75,11 +76,22 @@ namespace MegaDesk_Burton01
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
+            // MainMenu2
+            // 
+            this.MainMenu2.Location = new System.Drawing.Point(12, 301);
+            this.MainMenu2.Name = "MainMenu2";
+            this.MainMenu2.Size = new System.Drawing.Size(147, 35);
+            this.MainMenu2.TabIndex = 4;
+            this.MainMenu2.Text = "Main Menu 2";
+            this.MainMenu2.UseVisualStyleBackColor = true;
+            this.MainMenu2.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(821, 465);
+            this.Controls.Add(this.MainMenu2);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.searchQuotes);
             this.Controls.Add(this.viewQuote);
@@ -98,6 +110,7 @@ namespace MegaDesk_Burton01
         private System.Windows.Forms.Button viewQuote;
         private System.Windows.Forms.Button searchQuotes;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button MainMenu2;
     }
 }
 
