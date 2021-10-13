@@ -220,6 +220,11 @@ namespace MegaDesk
             menu.Show();
         }
 
-       
+        private void label2_Click(object sender, EventArgs e)
+        {
+            MainMenu menu = new MainMenu();
+            this.Close();
+            menu.Show();
+        }
     }
 }

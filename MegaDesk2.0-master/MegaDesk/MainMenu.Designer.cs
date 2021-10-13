@@ -133,7 +133,7 @@ namespace MegaDesk
             this.panelSideMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(239, 574);
+            this.panelSideMenu.Size = new System.Drawing.Size(249, 574);
             this.panelSideMenu.TabIndex = 7;
             // 
             // exitBtn1
@@ -146,7 +146,7 @@ namespace MegaDesk
             this.exitBtn1.Location = new System.Drawing.Point(0, 345);
             this.exitBtn1.Name = "exitBtn1";
             this.exitBtn1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.exitBtn1.Size = new System.Drawing.Size(239, 57);
+            this.exitBtn1.Size = new System.Drawing.Size(249, 57);
             this.exitBtn1.TabIndex = 4;
             this.exitBtn1.Text = "&Exit";
             this.exitBtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -162,7 +162,7 @@ namespace MegaDesk
             this.panelMediaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMediaSubMenu.Location = new System.Drawing.Point(0, 158);
             this.panelMediaSubMenu.Name = "panelMediaSubMenu";
-            this.panelMediaSubMenu.Size = new System.Drawing.Size(239, 187);
+            this.panelMediaSubMenu.Size = new System.Drawing.Size(249, 187);
             this.panelMediaSubMenu.TabIndex = 1;
             // 
             // searchQuoteBtn1
@@ -175,7 +175,7 @@ namespace MegaDesk
             this.searchQuoteBtn1.Location = new System.Drawing.Point(0, 106);
             this.searchQuoteBtn1.Name = "searchQuoteBtn1";
             this.searchQuoteBtn1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.searchQuoteBtn1.Size = new System.Drawing.Size(239, 61);
+            this.searchQuoteBtn1.Size = new System.Drawing.Size(249, 61);
             this.searchQuoteBtn1.TabIndex = 3;
             this.searchQuoteBtn1.Text = "S&earch Quotes";
             this.searchQuoteBtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -192,7 +192,7 @@ namespace MegaDesk
             this.viewQuoteBtn1.Location = new System.Drawing.Point(0, 54);
             this.viewQuoteBtn1.Name = "viewQuoteBtn1";
             this.viewQuoteBtn1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.viewQuoteBtn1.Size = new System.Drawing.Size(239, 52);
+            this.viewQuoteBtn1.Size = new System.Drawing.Size(249, 52);
             this.viewQuoteBtn1.TabIndex = 2;
             this.viewQuoteBtn1.Text = "&View Quotes";
             this.viewQuoteBtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -209,7 +209,7 @@ namespace MegaDesk
             this.addQuoteBtn1.Location = new System.Drawing.Point(0, 0);
             this.addQuoteBtn1.Name = "addQuoteBtn1";
             this.addQuoteBtn1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.addQuoteBtn1.Size = new System.Drawing.Size(239, 54);
+            this.addQuoteBtn1.Size = new System.Drawing.Size(249, 54);
             this.addQuoteBtn1.TabIndex = 1;
             this.addQuoteBtn1.Text = "&Add New Quote";
             this.addQuoteBtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -226,7 +226,7 @@ namespace MegaDesk
             this.btnMedia.Location = new System.Drawing.Point(0, 105);
             this.btnMedia.Name = "btnMedia";
             this.btnMedia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnMedia.Size = new System.Drawing.Size(239, 53);
+            this.btnMedia.Size = new System.Drawing.Size(249, 53);
             this.btnMedia.TabIndex = 0;
             this.btnMedia.Text = "&Start Desk Order";
             this.btnMedia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -239,17 +239,21 @@ namespace MegaDesk
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(239, 105);
+            this.panelLogo.Size = new System.Drawing.Size(249, 105);
             this.panelLogo.TabIndex = 0;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(55, 38);
+            this.label1.Location = new System.Drawing.Point(40, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 29);
+            this.label1.Padding = new System.Windows.Forms.Padding(15, 10, 0, 0);
+            this.label1.Size = new System.Drawing.Size(152, 39);
             this.label1.TabIndex = 5;
             this.label1.Text = "MegaDesk";
             // 

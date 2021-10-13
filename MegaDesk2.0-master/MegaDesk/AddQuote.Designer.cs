@@ -178,7 +178,6 @@ namespace MegaDesk
             this.nameTB.Name = "nameTB";
             this.nameTB.Size = new System.Drawing.Size(245, 22);
             this.nameTB.TabIndex = 0;
-            this.nameTB.BackColorChanged += new System.EventHandler(this.changeColor);
             // 
             // drawersTB
             // 
@@ -347,6 +346,7 @@ namespace MegaDesk
             this.label2.Size = new System.Drawing.Size(129, 29);
             this.label2.TabIndex = 9;
             this.label2.Text = "MegaDesk";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // AddQuote
             // 
