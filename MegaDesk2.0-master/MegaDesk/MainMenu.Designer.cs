@@ -29,10 +29,6 @@ namespace MegaDesk
         /// </summary>
         private void InitializeComponent()
         {
-            this.addQuoteBtn = new System.Windows.Forms.Button();
-            this.searchQuoteBtn = new System.Windows.Forms.Button();
-            this.viewQuoteBtn = new System.Windows.Forms.Button();
-            this.exitBtn = new System.Windows.Forms.Button();
             this.megaLabel = new System.Windows.Forms.Label();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.exitBtn1 = new System.Windows.Forms.Button();
@@ -48,76 +44,16 @@ namespace MegaDesk
             this.panelLogo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // addQuoteBtn
-            // 
-            this.addQuoteBtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.addQuoteBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.addQuoteBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.addQuoteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addQuoteBtn.Location = new System.Drawing.Point(724, 103);
-            this.addQuoteBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.addQuoteBtn.Name = "addQuoteBtn";
-            this.addQuoteBtn.Size = new System.Drawing.Size(213, 86);
-            this.addQuoteBtn.TabIndex = 2;
-            this.addQuoteBtn.Text = "Add New Quote";
-            this.addQuoteBtn.UseVisualStyleBackColor = false;
-            this.addQuoteBtn.Click += new System.EventHandler(this.addQuoteBtn_Click);
-            // 
-            // searchQuoteBtn
-            // 
-            this.searchQuoteBtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.searchQuoteBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.searchQuoteBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.searchQuoteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchQuoteBtn.Location = new System.Drawing.Point(724, 322);
-            this.searchQuoteBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.searchQuoteBtn.Name = "searchQuoteBtn";
-            this.searchQuoteBtn.Size = new System.Drawing.Size(213, 86);
-            this.searchQuoteBtn.TabIndex = 3;
-            this.searchQuoteBtn.Text = "Search Quotes";
-            this.searchQuoteBtn.UseVisualStyleBackColor = false;
-            this.searchQuoteBtn.Click += new System.EventHandler(this.searchQuoteBtn_Click);
-            // 
-            // viewQuoteBtn
-            // 
-            this.viewQuoteBtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.viewQuoteBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.viewQuoteBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.viewQuoteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewQuoteBtn.Location = new System.Drawing.Point(724, 215);
-            this.viewQuoteBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.viewQuoteBtn.Name = "viewQuoteBtn";
-            this.viewQuoteBtn.Size = new System.Drawing.Size(213, 86);
-            this.viewQuoteBtn.TabIndex = 4;
-            this.viewQuoteBtn.Text = "View Quotes";
-            this.viewQuoteBtn.UseVisualStyleBackColor = false;
-            this.viewQuoteBtn.Click += new System.EventHandler(this.viewQuoteBtn_Click);
-            // 
-            // exitBtn
-            // 
-            this.exitBtn.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.exitBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.exitBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitBtn.Location = new System.Drawing.Point(724, 429);
-            this.exitBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(213, 86);
-            this.exitBtn.TabIndex = 5;
-            this.exitBtn.Text = "Exit";
-            this.exitBtn.UseVisualStyleBackColor = false;
-            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
-            // 
             // megaLabel
             // 
             this.megaLabel.AutoSize = true;
             this.megaLabel.BackColor = System.Drawing.Color.Transparent;
-            this.megaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.megaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.megaLabel.ForeColor = System.Drawing.Color.Azure;
-            this.megaLabel.Location = new System.Drawing.Point(327, 105);
+            this.megaLabel.Location = new System.Drawing.Point(428, 117);
             this.megaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.megaLabel.Name = "megaLabel";
-            this.megaLabel.Size = new System.Drawing.Size(323, 69);
+            this.megaLabel.Size = new System.Drawing.Size(428, 91);
             this.megaLabel.TabIndex = 6;
             this.megaLabel.Text = "MegaDesk";
             // 
@@ -235,6 +171,8 @@ namespace MegaDesk
             // 
             // panelLogo
             // 
+            this.panelLogo.BackgroundImage = global::MegaDesk.Properties.Resources.modern;
+            this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelLogo.Controls.Add(this.label1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
@@ -248,9 +186,10 @@ namespace MegaDesk
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(40, 35);
+            this.label1.Location = new System.Drawing.Point(48, 9);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(15, 10, 0, 0);
             this.label1.Size = new System.Drawing.Size(152, 39);
@@ -262,18 +201,16 @@ namespace MegaDesk
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::MegaDesk.Properties.Resources.board_503944_1280;
+            this.BackgroundImage = global::MegaDesk.Properties.Resources.modern;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1010, 574);
             this.Controls.Add(this.panelSideMenu);
             this.Controls.Add(this.megaLabel);
-            this.Controls.Add(this.exitBtn);
-            this.Controls.Add(this.viewQuoteBtn);
-            this.Controls.Add(this.searchQuoteBtn);
-            this.Controls.Add(this.addQuoteBtn);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainMenu";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "MegaDesk";
             this.panelSideMenu.ResumeLayout(false);
             this.panelMediaSubMenu.ResumeLayout(false);
@@ -285,10 +222,6 @@ namespace MegaDesk
         }
 
         #endregion
-        private System.Windows.Forms.Button addQuoteBtn;
-        private System.Windows.Forms.Button searchQuoteBtn;
-        private System.Windows.Forms.Button viewQuoteBtn;
-        private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.Label megaLabel;
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Button btnMedia;

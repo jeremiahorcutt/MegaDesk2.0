@@ -29,8 +29,9 @@ namespace MegaDesk
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.allQuotes = new System.Windows.Forms.DataGridView();
             this.nameHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,10 +41,9 @@ namespace MegaDesk
             this.surfaceHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rushHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quoteHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.backbtn1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.allQuotes)).BeginInit();
             this.panel1.SuspendLayout();
@@ -52,10 +52,19 @@ namespace MegaDesk
             // 
             // allQuotes
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.allQuotes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            this.allQuotes.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.allQuotes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.allQuotes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.allQuotes.BackgroundColor = System.Drawing.Color.DimGray;
+            this.allQuotes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.allQuotes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.allQuotes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.allQuotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.allQuotes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nameHeader,
@@ -66,17 +75,18 @@ namespace MegaDesk
             this.surfaceHeader,
             this.rushHeader,
             this.quoteHeader});
-            this.allQuotes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.allQuotes.EnableHeadersVisualStyles = false;
+            this.allQuotes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.allQuotes.Location = new System.Drawing.Point(262, 27);
             this.allQuotes.Name = "allQuotes";
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.allQuotes.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.allQuotes.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.allQuotes.RowHeadersWidth = 30;
             this.allQuotes.RowTemplate.ReadOnly = true;
             this.allQuotes.Size = new System.Drawing.Size(748, 290);
@@ -146,20 +156,6 @@ namespace MegaDesk
             this.quoteHeader.ReadOnly = true;
             this.quoteHeader.Width = 125;
             // 
-            // backbtn1
-            // 
-            this.backbtn1.BackColor = System.Drawing.Color.Transparent;
-            this.backbtn1.BackgroundImage = global::MegaDesk.Properties.Resources.board_503944_1280;
-            this.backbtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backbtn1.ForeColor = System.Drawing.Color.White;
-            this.backbtn1.Location = new System.Drawing.Point(747, 323);
-            this.backbtn1.Name = "backbtn1";
-            this.backbtn1.Size = new System.Drawing.Size(125, 43);
-            this.backbtn1.TabIndex = 8;
-            this.backbtn1.Text = "Back";
-            this.backbtn1.UseVisualStyleBackColor = false;
-            this.backbtn1.Click += new System.EventHandler(this.backbtn1_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
@@ -171,16 +167,6 @@ namespace MegaDesk
             this.panel1.Size = new System.Drawing.Size(249, 376);
             this.panel1.TabIndex = 9;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(249, 100);
-            this.panel2.TabIndex = 0;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
@@ -190,7 +176,7 @@ namespace MegaDesk
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Location = new System.Drawing.Point(0, 100);
+            this.button1.Location = new System.Drawing.Point(0, 115);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button1.Size = new System.Drawing.Size(249, 42);
@@ -200,15 +186,28 @@ namespace MegaDesk
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panel2.BackgroundImage = global::MegaDesk.Properties.Resources.modern;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(249, 115);
+            this.panel2.TabIndex = 0;
+            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(21, 27);
+            this.label1.Location = new System.Drawing.Point(33, 9);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(30, 10, 0, 0);
             this.label1.Size = new System.Drawing.Size(167, 39);
@@ -218,10 +217,10 @@ namespace MegaDesk
             // 
             // ViewAllQuotes
             // 
-            this.BackgroundImage = global::MegaDesk.Properties.Resources.wood_2045380_1280;
+            this.BackgroundImage = global::MegaDesk.Properties.Resources.modern;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1031, 376);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.backbtn1);
             this.Controls.Add(this.allQuotes);
             this.Name = "ViewAllQuotes";
             this.Text = "All Quotes";
@@ -244,7 +243,6 @@ namespace MegaDesk
         private System.Windows.Forms.DataGridViewTextBoxColumn surfaceHeader;
         private System.Windows.Forms.DataGridViewTextBoxColumn rushHeader;
         private System.Windows.Forms.DataGridViewTextBoxColumn quoteHeader;
-        private System.Windows.Forms.Button backbtn1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;

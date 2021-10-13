@@ -36,7 +36,6 @@ namespace MegaDesk
             this.surfaceLabel = new System.Windows.Forms.Label();
             this.rushLabel = new System.Windows.Forms.Label();
             this.addQuoteBtn2 = new System.Windows.Forms.Button();
-            this.backbtn1 = new System.Windows.Forms.Button();
             this.nameTB = new System.Windows.Forms.TextBox();
             this.drawersTB = new System.Windows.Forms.NumericUpDown();
             this.inchLabel = new System.Windows.Forms.Label();
@@ -155,22 +154,6 @@ namespace MegaDesk
             this.addQuoteBtn2.UseVisualStyleBackColor = false;
             this.addQuoteBtn2.Click += new System.EventHandler(this.addQuoteBtn2_Click);
             // 
-            // backbtn1
-            // 
-            this.backbtn1.BackColor = System.Drawing.Color.Transparent;
-            this.backbtn1.BackgroundImage = global::MegaDesk.Properties.Resources.board_503944_1280;
-            this.backbtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backbtn1.ForeColor = System.Drawing.Color.White;
-            this.backbtn1.Location = new System.Drawing.Point(628, 446);
-            this.backbtn1.Margin = new System.Windows.Forms.Padding(4);
-            this.backbtn1.Name = "backbtn1";
-            this.backbtn1.Size = new System.Drawing.Size(167, 53);
-            this.backbtn1.TabIndex = 7;
-            this.backbtn1.TabStop = false;
-            this.backbtn1.Text = "Back";
-            this.backbtn1.UseVisualStyleBackColor = false;
-            this.backbtn1.Click += new System.EventHandler(this.backbtn1_Click);
-            // 
             // nameTB
             // 
             this.nameTB.Location = new System.Drawing.Point(550, 87);
@@ -280,7 +263,7 @@ namespace MegaDesk
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(212, 574);
+            this.panel1.Size = new System.Drawing.Size(252, 571);
             this.panel1.TabIndex = 21;
             // 
             // panel3
@@ -290,7 +273,7 @@ namespace MegaDesk
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 106);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(212, 101);
+            this.panel3.Size = new System.Drawing.Size(252, 101);
             this.panel3.TabIndex = 22;
             // 
             // button1
@@ -304,7 +287,7 @@ namespace MegaDesk
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
             this.button1.Location = new System.Drawing.Point(0, 42);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 43);
+            this.button1.Size = new System.Drawing.Size(252, 43);
             this.button1.TabIndex = 7;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = false;
@@ -321,7 +304,7 @@ namespace MegaDesk
             this.addQuoteBtn21.ForeColor = System.Drawing.Color.Gainsboro;
             this.addQuoteBtn21.Location = new System.Drawing.Point(0, 0);
             this.addQuoteBtn21.Name = "addQuoteBtn21";
-            this.addQuoteBtn21.Size = new System.Drawing.Size(212, 42);
+            this.addQuoteBtn21.Size = new System.Drawing.Size(252, 42);
             this.addQuoteBtn21.TabIndex = 6;
             this.addQuoteBtn21.Text = "Add Quote";
             this.addQuoteBtn21.UseVisualStyleBackColor = false;
@@ -329,23 +312,27 @@ namespace MegaDesk
             // 
             // panel2
             // 
+            this.panel2.BackgroundImage = global::MegaDesk.Properties.Resources.modern;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(212, 106);
+            this.panel2.Size = new System.Drawing.Size(252, 106);
             this.panel2.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(43, 37);
+            this.label2.Location = new System.Drawing.Point(70, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 29);
             this.label2.TabIndex = 9;
             this.label2.Text = "MegaDesk";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // AddQuote
@@ -353,8 +340,9 @@ namespace MegaDesk
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::MegaDesk.Properties.Resources.wood_2045380_1280;
-            this.ClientSize = new System.Drawing.Size(1010, 574);
+            this.BackgroundImage = global::MegaDesk.Properties.Resources.modern;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1063, 571);
             this.Controls.Add(this.addQuoteBtn2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.listboxRush);
@@ -365,13 +353,13 @@ namespace MegaDesk
             this.Controls.Add(this.inchLabel);
             this.Controls.Add(this.drawersTB);
             this.Controls.Add(this.nameTB);
-            this.Controls.Add(this.backbtn1);
             this.Controls.Add(this.rushLabel);
             this.Controls.Add(this.surfaceLabel);
             this.Controls.Add(this.drawersLabel);
             this.Controls.Add(this.depthLabel);
             this.Controls.Add(this.widthLabel);
             this.Controls.Add(this.nameLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddQuote";
             this.Text = "Add Quote";
@@ -396,7 +384,6 @@ namespace MegaDesk
         private System.Windows.Forms.Label surfaceLabel;
         private System.Windows.Forms.Label rushLabel;
         private System.Windows.Forms.Button addQuoteBtn2;
-        private System.Windows.Forms.Button backbtn1;
         private System.Windows.Forms.TextBox nameTB;
         private System.Windows.Forms.NumericUpDown drawersTB;
         private System.Windows.Forms.Label inchLabel;
