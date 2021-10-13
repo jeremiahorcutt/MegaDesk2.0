@@ -7,6 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -35,7 +36,11 @@ namespace MegaDesk
         public bool widthBool = true;
         public bool depthBool = true;
         public bool drawersBool = true;
-        
+        private bool isValidated = false;
+        Regex numberchk = new Regex(@"^([0-9]*|\d*)$");
+        Regex letterchk = new Regex(@"^([a-zA-Z]*)$");
+
+
         public AddQuote()
         {
             InitializeComponent();
@@ -63,7 +68,7 @@ namespace MegaDesk
 
                 //get values of input from from and convert to string where necessary
                 nameValue = nameTB.Text;
-                widthValue = widthTB.Value.ToString();
+                widthValue = widthTB.Text;
                 depthValue = depthTB.Value.ToString();
                 drawersValue = drawersTB.Value.ToString();
                 surfaceValue = this.listBoxSurface.GetItemText(listBoxSurface.SelectedItem);
@@ -88,7 +93,7 @@ namespace MegaDesk
 
 
                 //convert width, depth, and drawers to Integers from decimals
-                widthInt = (int)widthTB.Value;
+                widthInt = int.Parse(widthTB.Text);
                 depthInt = (int)depthTB.Value;
                 drawersInt = (int)drawersTB.Value;
                 surface = (DesktopMaterial)listBoxSurface.SelectedValue;
@@ -148,11 +153,46 @@ namespace MegaDesk
             }
         }
 
-
+        #region VALIDATION
         //method for validation if widthTB is changed
         private void widthTB_ValueChanged(object sender, EventArgs e)
         {
-            if (widthTB.Value >= Desk.MINWIDTH && widthTB.Value <= Desk.MAXWIDTH && IntVerify(widthTB.Value.ToString()))
+            if (widthTB.Text == string.Empty)
+            {
+                errorProvider1.SetError(widthTB, "Please provide Number between 24\" and 96\"");
+                errorProvider2.SetError(widthTB, "");
+                errorProvider3.SetError(widthTB, "");
+            }
+            else
+            {
+                if (numberchk.IsMatch(widthTB.Text))
+                {
+                    int inputNum = int.Parse(widthTB.Text);
+                    if (inputNum >= 24 && inputNum <= 96)
+                    {
+                        errorProvider1.SetError(widthTB, "");
+                        errorProvider2.SetError(widthTB, "");
+                        errorProvider3.SetError(widthTB, "Correct");
+
+                    }
+                    else
+                    {
+                        errorProvider1.SetError(widthTB, "");
+                        errorProvider2.SetError(widthTB, "Wrong format, Please provide Number between 24\" and 96\"");
+                        errorProvider3.SetError(widthTB, "");
+                    }
+                }
+                else
+                {
+                    errorProvider1.SetError(widthTB, "");
+                    errorProvider2.SetError(widthTB, "Wrong format, Please provide Number between 24\" and 96\"");
+                    errorProvider3.SetError(widthTB, "");
+                }
+            }
+
+
+/*
+            if (widthTB.Text >= Desk.MINWIDTH && widthTB.Value <= Desk.MAXWIDTH && IntVerify(widthTB.Value.ToString()))
             {
                 widthBool = true;
                 
@@ -163,8 +203,10 @@ namespace MegaDesk
                 //set value back to acceptable parameters
                 widthTB.Value = (int) 24;
                 
-            }
+            }*/
         }
+
+        #endregion
 
 
         //method for validation if depthTB is changed
