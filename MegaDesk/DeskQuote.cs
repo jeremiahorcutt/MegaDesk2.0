@@ -76,19 +76,11 @@ namespace MegaDesk
         //method for reading rush order prices from file "rushOrderPrices.txt"
         public static bool GetRushOrder()
         {
-            const string URL = "https://instructure-uploads.s3.amazonaws.com/account_" +
-                "107060000000000001/attachments/1575908/rushOrderPrices.txt?response-" +
-                "content-disposition=inline%3B%20filename%3D%22cit365_document_rushOrderPrices.txt" +
-                "%22%3B%20filename%2A%3DUTF-8%27%27cit365%255Fdocument%255FrushOrderPrices.txt" +
-                "&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJDW777BLV26JM2MQ%2F20211007%2F" +
-                "us-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211007T184217Z&X-Amz-Expires=86400&X" +
-                "-Amz-SignedHeaders=host&X-Amz-Signature=515ce4bc4d5505d14a815a1ab9746d12ac6b8c6f5" +
-                "28712144da1e88b09a9b6cb";
-            WebClient wc = new WebClient();
+            const string URL = "./rushOrderPrices.txt";
             string[] fs;
             try
             {
-                fs = wc.DownloadString(URL).Split('\n');
+                fs = File.ReadAllLines(URL);
                 Console.WriteLine("Reading file...");
 
             }
