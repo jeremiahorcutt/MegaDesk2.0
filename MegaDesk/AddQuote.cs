@@ -33,12 +33,12 @@ namespace MegaDesk
 
         DesktopMaterial surface;
         //declared booleans for validation
+        public bool nameBool = false;
         public bool widthBool = true;
         public bool depthBool = true;
         public bool drawersBool = true;
-        private bool isValidated = false;
         Regex numberchk = new Regex(@"^([0-9]*|\d*)$");
-        Regex letterchk = new Regex(@"^([a-zA-Z]*)$");
+        Regex letterchk = new Regex(@"^[\p{L} \.'\-]+$");
 
 
         public AddQuote()
@@ -61,7 +61,7 @@ namespace MegaDesk
         //logic for handling add quote click
         private void addQuoteBtn2_Click(object sender, EventArgs e)
         {
-            if (widthBool && depthBool && drawersBool && canAccessRushPrices)
+            if (nameBool && widthBool && depthBool && drawersBool && canAccessRushPrices)
             {
                 MessageBox.Show("Your quote has been generated!");
                 DisplayQuotes quote = new DisplayQuotes();
@@ -69,20 +69,22 @@ namespace MegaDesk
                 //get values of input from from and convert to string where necessary
                 nameValue = nameTB.Text;
                 widthValue = widthTB.Text;
-                depthValue = depthTB.Value.ToString();
-                drawersValue = drawersTB.Value.ToString();
+                depthValue = depthTB.Text;
+                drawersValue = drawersTB.Text;
                 surfaceValue = this.listBoxSurface.GetItemText(listBoxSurface.SelectedItem);
                 rushValue = this.listboxRush.GetItemText(listboxRush.SelectedItem);
-                
+
 
                 //interpretation of rush selection
-                if(rushValue =="Normal 14 Days")
+                if (rushValue == "Normal 14 Days")
                 {
                     rush = 0;
-                }else if(rushValue == "Rush 7 Days")
+                }
+                else if (rushValue == "Rush 7 Days")
                 {
                     rush = 7;
-                }else if(rushValue == "Rush 5 Days")
+                }
+                else if (rushValue == "Rush 5 Days")
                 {
                     rush = 5;
                 }
@@ -94,8 +96,8 @@ namespace MegaDesk
 
                 //convert width, depth, and drawers to Integers from decimals
                 widthInt = int.Parse(widthTB.Text);
-                depthInt = (int)depthTB.Value;
-                drawersInt = (int)drawersTB.Value;
+                depthInt = int.Parse(depthTB.Text);
+                drawersInt = int.Parse(drawersTB.Text);
                 surface = (DesktopMaterial)listBoxSurface.SelectedValue;
                 //create a new DeskQuote, passing information to DeskQuote.cs
                 DeskQuote newquote = new DeskQuote(nameValue, DateTime.Now.ToString("MM/dd/yyyy"), widthInt, depthInt, drawersInt, surface, rush);
@@ -120,8 +122,8 @@ namespace MegaDesk
                         //writes serialized object to JSON file
                         sw.WriteLine(serializedQuote);
                     };
-                    
-                   
+
+
                 }
                 catch (Exception ex)
                 {
@@ -138,23 +140,93 @@ namespace MegaDesk
         }
 
 
-        //method for validation if drawersTB is changed
+        /********************************************************************
+         *  drawersTB VALUECHANGED
+         *      This Function will validate if the desk's drawer amount consits 
+         *      of only integers and is not empty.
+         * ******************************************************************/
         private void drawersTB_ValueChanged(object sender, EventArgs e)
         {
-            if(drawersTB.Value >= Desk.MINDRAW && drawersTB.Value <= Desk.MAXDRAW)
+            if (drawersTB.Text == string.Empty)
             {
-                drawersBool = true;
+                errorProvider1.SetError(drawersTB, "Please provide Number between 0\" and 7\"");
+                errorProvider2.SetError(drawersTB, "");
+                errorProvider3.SetError(drawersTB, "");
+                drawersBool = false;
             }
             else
             {
-                MessageBox.Show("Number of drawers must be between 0 and 7");
-                //set value back to acceptable parameters
-                drawersTB.Value = 0;
+                if (numberchk.IsMatch(drawersTB.Text))
+                {
+                    int inputNum = int.Parse(drawersTB.Text);
+                    if (inputNum >= 0 && inputNum <= 7)
+                    {
+                        errorProvider1.SetError(drawersTB, "");
+                        errorProvider2.SetError(drawersTB, "");
+                        errorProvider3.SetError(drawersTB, "Correct");
+                        drawersBool = true;
+
+                    }
+                    else
+                    {
+                        errorProvider1.SetError(drawersTB, "");
+                        errorProvider2.SetError(drawersTB, "Wrong format, Please provide Number between 0\" and 7\"");
+                        errorProvider3.SetError(drawersTB, "");
+                        drawersBool = false;
+                    }
+                }
+                else
+                {
+                    errorProvider1.SetError(drawersTB, "");
+                    errorProvider2.SetError(drawersTB, "Wrong format, Please provide Number between 0\" and 7\"");
+                    errorProvider3.SetError(drawersTB, "");
+                    drawersBool = false;
+                }
             }
         }
 
         #region VALIDATION
-        //method for validation if widthTB is changed
+        /********************************************************************
+         *  NAMETB VALIDATED
+         *      This Function will validate if the user name consits of correct 
+         *      chars
+         * ******************************************************************/
+        private void nameTB_Validated(object sender, EventArgs e)
+        {
+            if (nameTB.Text == string.Empty)
+            {
+                errorProvider1.SetError(nameTB, "Please Enter Last Name");
+                errorProvider2.SetError(nameTB, "");
+                errorProvider3.SetError(nameTB, "");
+                nameBool = false;
+            }
+            else if (letterchk.IsMatch(nameTB.Text))
+            {
+                errorProvider1.SetError(nameTB, "");
+                errorProvider2.SetError(nameTB, "");
+                errorProvider3.SetError(nameTB, "Correct");
+                nameBool = true;
+
+
+
+
+            }
+
+            else
+            {
+                errorProvider1.SetError(nameTB, "");
+                errorProvider2.SetError(nameTB, "Characters Only");
+                errorProvider3.SetError(nameTB, "");
+                nameBool = false;
+            }
+        }
+
+
+        /********************************************************************
+         *  WIDTHTB VALUECHANGED
+         *      This Function will validate if the desk width consits of only
+         *      integers.
+         * ******************************************************************/
         private void widthTB_ValueChanged(object sender, EventArgs e)
         {
             if (widthTB.Text == string.Empty)
@@ -162,6 +234,7 @@ namespace MegaDesk
                 errorProvider1.SetError(widthTB, "Please provide Number between 24\" and 96\"");
                 errorProvider2.SetError(widthTB, "");
                 errorProvider3.SetError(widthTB, "");
+                widthBool = false;
             }
             else
             {
@@ -173,6 +246,7 @@ namespace MegaDesk
                         errorProvider1.SetError(widthTB, "");
                         errorProvider2.SetError(widthTB, "");
                         errorProvider3.SetError(widthTB, "Correct");
+                        widthBool = true;
 
                     }
                     else
@@ -180,6 +254,7 @@ namespace MegaDesk
                         errorProvider1.SetError(widthTB, "");
                         errorProvider2.SetError(widthTB, "Wrong format, Please provide Number between 24\" and 96\"");
                         errorProvider3.SetError(widthTB, "");
+                        widthBool = false;
                     }
                 }
                 else
@@ -187,41 +262,53 @@ namespace MegaDesk
                     errorProvider1.SetError(widthTB, "");
                     errorProvider2.SetError(widthTB, "Wrong format, Please provide Number between 24\" and 96\"");
                     errorProvider3.SetError(widthTB, "");
+                    widthBool = false;
                 }
             }
-
-
-/*
-            if (widthTB.Text >= Desk.MINWIDTH && widthTB.Value <= Desk.MAXWIDTH && IntVerify(widthTB.Value.ToString()))
-            {
-                widthBool = true;
-                
-            }
-            else
-            {
-                MessageBox.Show("Desk Width must be a whole number between 24 and 96");
-                //set value back to acceptable parameters
-                widthTB.Value = (int) 24;
-                
-            }*/
         }
 
-        #endregion
-
-
-        //method for validation if depthTB is changed
+        /********************************************************************
+         *  DEPTHTB VALUECHANGED
+         *      This Function will validate if the desk depth consits of only
+         *      integers and is not empty.
+         * ******************************************************************/
         private void depthTB_ValueChanged(object sender, EventArgs e)
         {
-            if (depthTB.Value >= Desk.MINDEPTH && depthTB.Value <= Desk.MAXDEPTH && IntVerify(depthTB.Value.ToString()))
+            if (depthTB.Text == string.Empty)
             {
-                depthBool = true;
+                errorProvider1.SetError(depthTB, "Please provide Number between 12\" and 48\"");
+                errorProvider2.SetError(depthTB, "");
+                errorProvider3.SetError(depthTB, "");
+                depthBool = false;
             }
             else
             {
-                System.Diagnostics.Debug.WriteLine(depthTB.Value.ToString());
-                MessageBox.Show("Desk Depth must be a whole number between 12 and 48");
-                //set value back to acceptable parameters
-                depthTB.Value = 12;
+                if (numberchk.IsMatch(depthTB.Text))
+                {
+                    int inputNum = int.Parse(depthTB.Text);
+                    if (inputNum >= 12 && inputNum <= 48)
+                    {
+                        errorProvider1.SetError(depthTB, "");
+                        errorProvider2.SetError(depthTB, "");
+                        errorProvider3.SetError(depthTB, "Correct");
+                        depthBool = true;
+
+                    }
+                    else
+                    {
+                        errorProvider1.SetError(depthTB, "");
+                        errorProvider2.SetError(depthTB, "Wrong format, Please provide Number between 12\" and 48\"");
+                        errorProvider3.SetError(depthTB, "");
+                        depthBool = false;
+                    }
+                }
+                else
+                {
+                    errorProvider1.SetError(depthTB, "");
+                    errorProvider2.SetError(depthTB, "Wrong format, Please provide Number between 12\" and 48\"");
+                    errorProvider3.SetError(depthTB, "");
+                    depthBool = false;
+                }
             }
         }
 
@@ -233,14 +320,14 @@ namespace MegaDesk
             {
                 if (Char.IsDigit(c))
                 {
-                    count += 0;               
+                    count += 0;
                 }
                 else
                 {
                     count += 1;
                 };
             }
-            if(count == 0)
+            if (count == 0)
             {
                 return true;
             }
@@ -249,5 +336,11 @@ namespace MegaDesk
                 return false;
             }
         }
+
+
+        #endregion
+
+
+
     }
 }

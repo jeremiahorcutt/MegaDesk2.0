@@ -41,10 +41,8 @@ namespace MegaDesk
             this.backbtn1 = new System.Windows.Forms.Button();
             this.mgLogoLabel = new System.Windows.Forms.Label();
             this.nameTB = new System.Windows.Forms.TextBox();
-            this.drawersTB = new System.Windows.Forms.NumericUpDown();
             this.inchLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.depthTB = new System.Windows.Forms.NumericUpDown();
             this.listBoxSurface = new System.Windows.Forms.ComboBox();
             this.listboxRush = new System.Windows.Forms.ComboBox();
             this.widthTB = new System.Windows.Forms.TextBox();
@@ -52,8 +50,8 @@ namespace MegaDesk
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.drawersTB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.depthTB)).BeginInit();
+            this.depthTB = new System.Windows.Forms.TextBox();
+            this.drawersTB = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
@@ -177,14 +175,7 @@ namespace MegaDesk
             this.nameTB.Name = "nameTB";
             this.nameTB.Size = new System.Drawing.Size(271, 20);
             this.nameTB.TabIndex = 9;
-            // 
-            // drawersTB
-            // 
-            this.drawersTB.Location = new System.Drawing.Point(223, 168);
-            this.drawersTB.Name = "drawersTB";
-            this.drawersTB.Size = new System.Drawing.Size(61, 20);
-            this.drawersTB.TabIndex = 13;
-            this.drawersTB.ValueChanged += new System.EventHandler(this.drawersTB_ValueChanged);
+            this.nameTB.Validated += new System.EventHandler(this.nameTB_Validated);
             // 
             // inchLabel
             // 
@@ -209,19 +200,6 @@ namespace MegaDesk
             this.label1.Size = new System.Drawing.Size(79, 17);
             this.label1.TabIndex = 16;
             this.label1.Text = "in. (12 - 48)";
-            // 
-            // depthTB
-            // 
-            this.depthTB.Location = new System.Drawing.Point(223, 124);
-            this.depthTB.Name = "depthTB";
-            this.depthTB.Size = new System.Drawing.Size(61, 20);
-            this.depthTB.TabIndex = 18;
-            this.depthTB.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.depthTB.ValueChanged += new System.EventHandler(this.depthTB_ValueChanged);
             // 
             // listBoxSurface
             // 
@@ -285,20 +263,36 @@ namespace MegaDesk
             this.label2.TabIndex = 22;
             this.label2.Text = "Max = 7";
             // 
+            // depthTB
+            // 
+            this.depthTB.Location = new System.Drawing.Point(223, 122);
+            this.depthTB.Name = "depthTB";
+            this.depthTB.Size = new System.Drawing.Size(61, 20);
+            this.depthTB.TabIndex = 23;
+            this.depthTB.Validated += new System.EventHandler(this.depthTB_ValueChanged);
+            // 
+            // drawersTB
+            // 
+            this.drawersTB.Location = new System.Drawing.Point(223, 164);
+            this.drawersTB.Name = "drawersTB";
+            this.drawersTB.Size = new System.Drawing.Size(61, 20);
+            this.drawersTB.TabIndex = 24;
+            this.drawersTB.Validated += new System.EventHandler(this.drawersTB_ValueChanged);
+            // 
             // AddQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MegaDesk.Properties.Resources.wood_2045380_1280;
             this.ClientSize = new System.Drawing.Size(559, 376);
+            this.Controls.Add(this.drawersTB);
+            this.Controls.Add(this.depthTB);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.widthTB);
             this.Controls.Add(this.listboxRush);
             this.Controls.Add(this.listBoxSurface);
-            this.Controls.Add(this.depthTB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.inchLabel);
-            this.Controls.Add(this.drawersTB);
             this.Controls.Add(this.nameTB);
             this.Controls.Add(this.mgLogoLabel);
             this.Controls.Add(this.backbtn1);
@@ -311,8 +305,6 @@ namespace MegaDesk
             this.Controls.Add(this.nameLabel);
             this.Name = "AddQuote";
             this.Text = "Add Quote";
-            ((System.ComponentModel.ISupportInitialize)(this.drawersTB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.depthTB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
@@ -333,10 +325,8 @@ namespace MegaDesk
         private System.Windows.Forms.Button backbtn1;
         private System.Windows.Forms.Label mgLogoLabel;
         private System.Windows.Forms.TextBox nameTB;
-        private System.Windows.Forms.NumericUpDown drawersTB;
         private System.Windows.Forms.Label inchLabel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown depthTB;
         private System.Windows.Forms.ComboBox listBoxSurface;
         private System.Windows.Forms.ComboBox listboxRush;
         private System.Windows.Forms.TextBox widthTB;
@@ -344,6 +334,8 @@ namespace MegaDesk
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.ErrorProvider errorProvider3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox drawersTB;
+        private System.Windows.Forms.TextBox depthTB;
     }
 
  
