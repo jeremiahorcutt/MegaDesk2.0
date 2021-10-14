@@ -77,7 +77,7 @@ namespace MegaDesk
             this.quoteHeader});
             this.allQuotes.EnableHeadersVisualStyles = false;
             this.allQuotes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.allQuotes.Location = new System.Drawing.Point(262, 27);
+            this.allQuotes.Location = new System.Drawing.Point(296, 115);
             this.allQuotes.Name = "allQuotes";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -89,7 +89,7 @@ namespace MegaDesk
             this.allQuotes.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.allQuotes.RowHeadersWidth = 30;
             this.allQuotes.RowTemplate.ReadOnly = true;
-            this.allQuotes.Size = new System.Drawing.Size(748, 290);
+            this.allQuotes.Size = new System.Drawing.Size(1031, 290);
             this.allQuotes.TabIndex = 0;
             // 
             // nameHeader
@@ -164,7 +164,7 @@ namespace MegaDesk
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 376);
+            this.panel1.Size = new System.Drawing.Size(238, 519);
             this.panel1.TabIndex = 9;
             // 
             // button1
@@ -179,7 +179,7 @@ namespace MegaDesk
             this.button1.Location = new System.Drawing.Point(0, 115);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(249, 42);
+            this.button1.Size = new System.Drawing.Size(238, 42);
             this.button1.TabIndex = 1;
             this.button1.Text = "&Back";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -195,7 +195,7 @@ namespace MegaDesk
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(249, 115);
+            this.panel2.Size = new System.Drawing.Size(238, 115);
             this.panel2.TabIndex = 0;
             // 
             // label1
@@ -219,9 +219,10 @@ namespace MegaDesk
             // 
             this.BackgroundImage = global::MegaDesk.Properties.Resources.modern;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1031, 376);
+            this.ClientSize = new System.Drawing.Size(1380, 519);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.allQuotes);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ViewAllQuotes";
             this.Text = "All Quotes";
             ((System.ComponentModel.ISupportInitialize)(this.allQuotes)).EndInit();
