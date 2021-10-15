@@ -164,7 +164,7 @@ namespace MegaDesk
             this.btnMedia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnMedia.Size = new System.Drawing.Size(251, 53);
             this.btnMedia.TabIndex = 0;
-            this.btnMedia.Text = "&Desk Ouote";
+            this.btnMedia.Text = "&Menu Options";
             this.btnMedia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMedia.UseVisualStyleBackColor = true;
             this.btnMedia.Click += new System.EventHandler(this.btnMedia_Click);
