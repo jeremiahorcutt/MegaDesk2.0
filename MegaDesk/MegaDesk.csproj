@@ -128,5 +128,17 @@
   <ItemGroup>
     <None Include="Resources\wood-2045380_1280.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correct2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wronginput.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

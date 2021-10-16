@@ -121,7 +121,16 @@
   <data name="board-503944_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\board-503944_1280.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="correct2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\correct2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="wood-2045380_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wood-2045380_1280.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wronginput" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wronginput.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
