@@ -66,7 +66,7 @@ namespace MegaDesk
             this.nameLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.ForeColor = System.Drawing.Color.White;
-            this.nameLabel.Location = new System.Drawing.Point(404, 32);
+            this.nameLabel.Location = new System.Drawing.Point(523, 50);
             this.nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(94, 31);
@@ -79,7 +79,7 @@ namespace MegaDesk
             this.widthLabel.BackColor = System.Drawing.Color.Transparent;
             this.widthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.widthLabel.ForeColor = System.Drawing.Color.White;
-            this.widthLabel.Location = new System.Drawing.Point(328, 91);
+            this.widthLabel.Location = new System.Drawing.Point(447, 109);
             this.widthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.widthLabel.Name = "widthLabel";
             this.widthLabel.Size = new System.Drawing.Size(161, 31);
@@ -92,7 +92,7 @@ namespace MegaDesk
             this.depthLabel.BackColor = System.Drawing.Color.Transparent;
             this.depthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.depthLabel.ForeColor = System.Drawing.Color.White;
-            this.depthLabel.Location = new System.Drawing.Point(328, 146);
+            this.depthLabel.Location = new System.Drawing.Point(447, 164);
             this.depthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.depthLabel.Name = "depthLabel";
             this.depthLabel.Size = new System.Drawing.Size(165, 31);
@@ -105,7 +105,7 @@ namespace MegaDesk
             this.drawersLabel.BackColor = System.Drawing.Color.Transparent;
             this.drawersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drawersLabel.ForeColor = System.Drawing.Color.White;
-            this.drawersLabel.Location = new System.Drawing.Point(248, 203);
+            this.drawersLabel.Location = new System.Drawing.Point(367, 221);
             this.drawersLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.drawersLabel.Name = "drawersLabel";
             this.drawersLabel.Size = new System.Drawing.Size(257, 31);
@@ -118,7 +118,7 @@ namespace MegaDesk
             this.surfaceLabel.BackColor = System.Drawing.Color.Transparent;
             this.surfaceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.surfaceLabel.ForeColor = System.Drawing.Color.White;
-            this.surfaceLabel.Location = new System.Drawing.Point(278, 261);
+            this.surfaceLabel.Location = new System.Drawing.Point(397, 279);
             this.surfaceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.surfaceLabel.Name = "surfaceLabel";
             this.surfaceLabel.Size = new System.Drawing.Size(219, 31);
@@ -131,7 +131,7 @@ namespace MegaDesk
             this.rushLabel.BackColor = System.Drawing.Color.Transparent;
             this.rushLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rushLabel.ForeColor = System.Drawing.Color.White;
-            this.rushLabel.Location = new System.Drawing.Point(338, 321);
+            this.rushLabel.Location = new System.Drawing.Point(457, 339);
             this.rushLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rushLabel.Name = "rushLabel";
             this.rushLabel.Size = new System.Drawing.Size(162, 31);
@@ -144,8 +144,8 @@ namespace MegaDesk
             this.addQuoteBtn2.BackgroundImage = global::MegaDesk.Properties.Resources.board_503944_1280;
             this.addQuoteBtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addQuoteBtn2.ForeColor = System.Drawing.Color.White;
-            this.addQuoteBtn2.Location = new System.Drawing.Point(582, 397);
-            this.addQuoteBtn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addQuoteBtn2.Location = new System.Drawing.Point(701, 415);
+            this.addQuoteBtn2.Margin = new System.Windows.Forms.Padding(4);
             this.addQuoteBtn2.Name = "addQuoteBtn2";
             this.addQuoteBtn2.Size = new System.Drawing.Size(167, 53);
             this.addQuoteBtn2.TabIndex = 6;
@@ -159,8 +159,8 @@ namespace MegaDesk
             this.backbtn1.BackgroundImage = global::MegaDesk.Properties.Resources.board_503944_1280;
             this.backbtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backbtn1.ForeColor = System.Drawing.Color.White;
-            this.backbtn1.Location = new System.Drawing.Point(778, 397);
-            this.backbtn1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backbtn1.Location = new System.Drawing.Point(897, 415);
+            this.backbtn1.Margin = new System.Windows.Forms.Padding(4);
             this.backbtn1.Name = "backbtn1";
             this.backbtn1.Size = new System.Drawing.Size(167, 53);
             this.backbtn1.TabIndex = 7;
@@ -174,7 +174,7 @@ namespace MegaDesk
             this.mgLogoLabel.BackColor = System.Drawing.Color.Transparent;
             this.mgLogoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mgLogoLabel.ForeColor = System.Drawing.Color.White;
-            this.mgLogoLabel.Location = new System.Drawing.Point(669, -1);
+            this.mgLogoLabel.Location = new System.Drawing.Point(788, 17);
             this.mgLogoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mgLogoLabel.Name = "mgLogoLabel";
             this.mgLogoLabel.Size = new System.Drawing.Size(80, 18);
@@ -183,11 +183,11 @@ namespace MegaDesk
             // 
             // nameTB
             // 
-            this.nameTB.Location = new System.Drawing.Point(514, 37);
-            this.nameTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nameTB.Location = new System.Drawing.Point(633, 55);
+            this.nameTB.Margin = new System.Windows.Forms.Padding(4);
             this.nameTB.Name = "nameTB";
             this.nameTB.Size = new System.Drawing.Size(360, 22);
-            this.nameTB.TabIndex = 9;
+            this.nameTB.TabIndex = 0;
             this.nameTB.Validated += new System.EventHandler(this.nameTB_Validated);
             // 
             // inchLabel
@@ -196,7 +196,7 @@ namespace MegaDesk
             this.inchLabel.BackColor = System.Drawing.Color.Transparent;
             this.inchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inchLabel.ForeColor = System.Drawing.Color.White;
-            this.inchLabel.Location = new System.Drawing.Point(672, 97);
+            this.inchLabel.Location = new System.Drawing.Point(791, 115);
             this.inchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.inchLabel.Name = "inchLabel";
             this.inchLabel.Size = new System.Drawing.Size(103, 24);
@@ -209,7 +209,7 @@ namespace MegaDesk
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(672, 157);
+            this.label1.Location = new System.Drawing.Point(791, 175);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 24);
@@ -225,11 +225,11 @@ namespace MegaDesk
             "Rosewood",
             "Veneer",
             "Pine"});
-            this.listBoxSurface.Location = new System.Drawing.Point(514, 264);
-            this.listBoxSurface.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxSurface.Location = new System.Drawing.Point(633, 282);
+            this.listBoxSurface.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxSurface.Name = "listBoxSurface";
             this.listBoxSurface.Size = new System.Drawing.Size(160, 24);
-            this.listBoxSurface.TabIndex = 19;
+            this.listBoxSurface.TabIndex = 5;
             // 
             // listboxRush
             // 
@@ -239,19 +239,19 @@ namespace MegaDesk
             "Rush 7 Days",
             "Rush 5 Days",
             "Rush 3 Days"});
-            this.listboxRush.Location = new System.Drawing.Point(514, 325);
-            this.listboxRush.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listboxRush.Location = new System.Drawing.Point(633, 343);
+            this.listboxRush.Margin = new System.Windows.Forms.Padding(4);
             this.listboxRush.Name = "listboxRush";
             this.listboxRush.Size = new System.Drawing.Size(160, 24);
-            this.listboxRush.TabIndex = 20;
+            this.listboxRush.TabIndex = 6;
             // 
             // widthTB
             // 
-            this.widthTB.Location = new System.Drawing.Point(514, 97);
-            this.widthTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.widthTB.Location = new System.Drawing.Point(633, 115);
+            this.widthTB.Margin = new System.Windows.Forms.Padding(4);
             this.widthTB.Name = "widthTB";
             this.widthTB.Size = new System.Drawing.Size(80, 22);
-            this.widthTB.TabIndex = 21;
+            this.widthTB.TabIndex = 2;
             this.widthTB.Validated += new System.EventHandler(this.widthTB_ValueChanged);
             // 
             // errorProvider1
@@ -275,7 +275,7 @@ namespace MegaDesk
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(672, 211);
+            this.label2.Location = new System.Drawing.Point(791, 229);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 24);
@@ -284,24 +284,25 @@ namespace MegaDesk
             // 
             // depthTB
             // 
-            this.depthTB.Location = new System.Drawing.Point(514, 151);
-            this.depthTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.depthTB.Location = new System.Drawing.Point(633, 169);
+            this.depthTB.Margin = new System.Windows.Forms.Padding(4);
             this.depthTB.Name = "depthTB";
             this.depthTB.Size = new System.Drawing.Size(80, 22);
-            this.depthTB.TabIndex = 23;
+            this.depthTB.TabIndex = 3;
             this.depthTB.Validated += new System.EventHandler(this.depthTB_ValueChanged);
             // 
             // drawersTB
             // 
-            this.drawersTB.Location = new System.Drawing.Point(514, 203);
-            this.drawersTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.drawersTB.Location = new System.Drawing.Point(633, 221);
+            this.drawersTB.Margin = new System.Windows.Forms.Padding(4);
             this.drawersTB.Name = "drawersTB";
             this.drawersTB.Size = new System.Drawing.Size(80, 22);
-            this.drawersTB.TabIndex = 24;
+            this.drawersTB.TabIndex = 4;
             this.drawersTB.Validated += new System.EventHandler(this.drawersTB_ValueChanged);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -311,10 +312,12 @@ namespace MegaDesk
             // 
             // panel2
             // 
+            this.panel2.BackgroundImage = global::MegaDesk.Properties.Resources.modern;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 139);
+            this.panel2.Size = new System.Drawing.Size(250, 137);
             this.panel2.TabIndex = 0;
             // 
             // AddQuote
@@ -323,7 +326,7 @@ namespace MegaDesk
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MegaDesk.Properties.Resources.modern;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(986, 488);
+            this.ClientSize = new System.Drawing.Size(1183, 488);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.drawersTB);
             this.Controls.Add(this.depthTB);
@@ -343,7 +346,7 @@ namespace MegaDesk
             this.Controls.Add(this.depthLabel);
             this.Controls.Add(this.widthLabel);
             this.Controls.Add(this.nameLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddQuote";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Quote";
