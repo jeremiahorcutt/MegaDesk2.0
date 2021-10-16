@@ -43,11 +43,11 @@ namespace MegaDesk
             this.rushOutput = new System.Windows.Forms.Label();
             this.priceLabel = new System.Windows.Forms.Label();
             this.quoteOutput = new System.Windows.Forms.Label();
-            this.menubtn = new System.Windows.Forms.Button();
             this.dateLabel = new System.Windows.Forms.Label();
             this.dateOutput = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.menubtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -233,22 +233,6 @@ namespace MegaDesk
             this.quoteOutput.TabIndex = 19;
             this.quoteOutput.Text = "?";
             // 
-            // menubtn
-            // 
-            this.menubtn.BackColor = System.Drawing.Color.Transparent;
-            this.menubtn.BackgroundImage = global::MegaDesk.Properties.Resources.board_503944_1280;
-            this.menubtn.FlatAppearance.BorderSize = 0;
-            this.menubtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menubtn.ForeColor = System.Drawing.Color.White;
-            this.menubtn.Location = new System.Drawing.Point(963, 430);
-            this.menubtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.menubtn.Name = "menubtn";
-            this.menubtn.Size = new System.Drawing.Size(167, 53);
-            this.menubtn.TabIndex = 20;
-            this.menubtn.Text = "Menu";
-            this.menubtn.UseVisualStyleBackColor = false;
-            this.menubtn.Click += new System.EventHandler(this.menubtn_Click);
-            // 
             // dateLabel
             // 
             this.dateLabel.AutoSize = true;
@@ -278,6 +262,7 @@ namespace MegaDesk
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panel1.Controls.Add(this.menubtn);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -295,6 +280,24 @@ namespace MegaDesk
             this.panel2.Size = new System.Drawing.Size(250, 125);
             this.panel2.TabIndex = 0;
             // 
+            // menubtn
+            // 
+            this.menubtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.menubtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.menubtn.FlatAppearance.BorderSize = 0;
+            this.menubtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menubtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menubtn.ForeColor = System.Drawing.Color.Gainsboro;
+            this.menubtn.Location = new System.Drawing.Point(0, 125);
+            this.menubtn.Name = "menubtn";
+            this.menubtn.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.menubtn.Size = new System.Drawing.Size(250, 51);
+            this.menubtn.TabIndex = 1;
+            this.menubtn.Text = "&Menu";
+            this.menubtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.menubtn.UseVisualStyleBackColor = false;
+            this.menubtn.Click += new System.EventHandler(this.menubtn_Click_1);
+            // 
             // DisplayQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -305,7 +308,6 @@ namespace MegaDesk
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dateOutput);
             this.Controls.Add(this.dateLabel);
-            this.Controls.Add(this.menubtn);
             this.Controls.Add(this.quoteOutput);
             this.Controls.Add(this.priceLabel);
             this.Controls.Add(this.rushOutput);
@@ -347,10 +349,10 @@ namespace MegaDesk
         private System.Windows.Forms.Label rushOutput;
         private System.Windows.Forms.Label priceLabel;
         private System.Windows.Forms.Label quoteOutput;
-        private System.Windows.Forms.Button menubtn;
         private System.Windows.Forms.Label dateLabel;
         private System.Windows.Forms.Label dateOutput;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button menubtn;
     }
 }

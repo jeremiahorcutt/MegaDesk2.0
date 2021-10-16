@@ -83,7 +83,9 @@ namespace MegaDesk
             //}
         }
 
-        private void backbtn1_Click(object sender, EventArgs e)
+        
+
+        private void backbtn1_Click_1(object sender, EventArgs e)
         {
             MainMenu menu = new MainMenu();
             this.Close();
