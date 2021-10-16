@@ -8,3 +8,4 @@
 {"date":"10/15/2021","Name":"bill","Rush":7,"quotePrice":667,"desk":{"width":24,"depth":48,"drawers":3,"surfaceMaterial":125,"area":1152}}
 {"date":"10/15/2021","Name":"bill","Rush":3,"quotePrice":4528,"desk":{"width":96,"depth":48,"drawers":7,"surfaceMaterial":300,"area":4608}}
 {"date":"10/15/2021","Name":"John","Rush":7,"quotePrice":705,"desk":{"width":24,"depth":12,"drawers":7,"surfaceMaterial":125,"area":288}}
+{"date":"10/16/2021","Name":"Fred","Rush":7,"quotePrice":730,"desk":{"width":25,"depth":26,"drawers":4,"surfaceMaterial":300,"area":650}}
