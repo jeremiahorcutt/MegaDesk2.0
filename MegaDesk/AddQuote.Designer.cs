@@ -295,7 +295,7 @@ namespace MegaDesk
             this.addQuoteBtn2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.addQuoteBtn2.Size = new System.Drawing.Size(250, 48);
             this.addQuoteBtn2.TabIndex = 1;
-            this.addQuoteBtn2.Text = "&Display Quote";
+            this.addQuoteBtn2.Text = "&Create Quote";
             this.addQuoteBtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.addQuoteBtn2.UseVisualStyleBackColor = false;
             this.addQuoteBtn2.Click += new System.EventHandler(this.addQuoteBtn2_Click_1);

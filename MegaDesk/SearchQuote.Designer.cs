@@ -29,8 +29,8 @@ namespace MegaDesk
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.searchQuotesGrid = new System.Windows.Forms.DataGridView();
             this.nameHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,8 +53,8 @@ namespace MegaDesk
             // 
             // searchQuotesGrid
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.searchQuotesGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            this.searchQuotesGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
             this.searchQuotesGrid.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.searchQuotesGrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.searchQuotesGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -71,14 +71,14 @@ namespace MegaDesk
             this.searchQuotesGrid.Location = new System.Drawing.Point(282, 145);
             this.searchQuotesGrid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchQuotesGrid.Name = "searchQuotesGrid";
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.searchQuotesGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.searchQuotesGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.searchQuotesGrid.RowHeadersWidth = 30;
             this.searchQuotesGrid.RowTemplate.ReadOnly = true;
             this.searchQuotesGrid.Size = new System.Drawing.Size(1032, 220);
@@ -151,10 +151,10 @@ namespace MegaDesk
             // listBoxSurface
             // 
             this.listBoxSurface.FormattingEnabled = true;
-            this.listBoxSurface.Location = new System.Drawing.Point(537, 96);
+            this.listBoxSurface.Location = new System.Drawing.Point(567, 100);
             this.listBoxSurface.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxSurface.Name = "listBoxSurface";
-            this.listBoxSurface.Size = new System.Drawing.Size(160, 24);
+            this.listBoxSurface.Size = new System.Drawing.Size(169, 24);
             this.listBoxSurface.TabIndex = 0;
             this.listBoxSurface.SelectedIndexChanged += new System.EventHandler(this.listBoxSurface_SelectedIndexChanged);
             // 
@@ -204,9 +204,11 @@ namespace MegaDesk
             this.backbtn1.ForeColor = System.Drawing.Color.Gainsboro;
             this.backbtn1.Location = new System.Drawing.Point(0, 124);
             this.backbtn1.Name = "backbtn1";
+            this.backbtn1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.backbtn1.Size = new System.Drawing.Size(250, 50);
             this.backbtn1.TabIndex = 1;
             this.backbtn1.Text = "&Back";
+            this.backbtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.backbtn1.UseVisualStyleBackColor = false;
             this.backbtn1.Click += new System.EventHandler(this.backbtn1_Click_1);
             // 
