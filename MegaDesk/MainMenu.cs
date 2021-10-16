@@ -44,6 +44,9 @@ namespace MegaDesk
             Application.Exit();
         }
 
-       
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
