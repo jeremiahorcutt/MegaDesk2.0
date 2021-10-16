@@ -140,5 +140,8 @@
   <ItemGroup>
     <None Include="Resources\wronginput.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modern.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

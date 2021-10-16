@@ -29,7 +29,8 @@ namespace MegaDesk
             dateOutput.Text = DateTime.Now.ToString("MM/dd/yyyy");
         }
 
-        private void menubtn_Click(object sender, EventArgs e)
+        
+        private void menubtn_Click_1(object sender, EventArgs e)
         {
             MainMenu menu = new MainMenu();
             this.Hide();

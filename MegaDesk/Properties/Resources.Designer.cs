@@ -93,6 +93,16 @@ namespace MegaDesk.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap modern {
+            get {
+                object obj = ResourceManager.GetObject("modern", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wood_2045380_1280 {
             get {
                 object obj = ResourceManager.GetObject("wood-2045380_1280", resourceCulture);

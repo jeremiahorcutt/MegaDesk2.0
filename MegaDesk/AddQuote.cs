@@ -58,86 +58,7 @@ namespace MegaDesk
             menu.Show();
         }
 
-        //logic for handling add quote click
-        private void addQuoteBtn2_Click(object sender, EventArgs e)
-        {
-            if (nameBool && widthBool && depthBool && drawersBool && canAccessRushPrices)
-            {
-                MessageBox.Show("Your quote has been generated!");
-                DisplayQuotes quote = new DisplayQuotes();
-
-                //get values of input from from and convert to string where necessary
-                nameValue = nameTB.Text;
-                widthValue = widthTB.Text;
-                depthValue = depthTB.Text;
-                drawersValue = drawersTB.Text;
-                surfaceValue = this.listBoxSurface.GetItemText(listBoxSurface.SelectedItem);
-                rushValue = this.listboxRush.GetItemText(listboxRush.SelectedItem);
-
-
-                //interpretation of rush selection
-                if (rushValue == "Normal 14 Days")
-                {
-                    rush = 0;
-                }
-                else if (rushValue == "Rush 7 Days")
-                {
-                    rush = 7;
-                }
-                else if (rushValue == "Rush 5 Days")
-                {
-                    rush = 5;
-                }
-                else
-                {
-                    rush = 3;
-                }
-
-
-                //convert width, depth, and drawers to Integers from decimals
-                widthInt = int.Parse(widthTB.Text);
-                depthInt = int.Parse(depthTB.Text);
-                drawersInt = int.Parse(drawersTB.Text);
-                surface = (DesktopMaterial)listBoxSurface.SelectedValue;
-                //create a new DeskQuote, passing information to DeskQuote.cs
-                DeskQuote newquote = new DeskQuote(nameValue, DateTime.Now.ToString("MM/dd/yyyy"), widthInt, depthInt, drawersInt, surface, rush);
-
-                //calculate the quote
-                quotePrice = newquote.GetQuote(rush);
-                quotePriceString = quotePrice.ToString();
-
-                //serialize newquote to be passed to the file.
-                string serializedQuote = JsonConvert.SerializeObject(newquote);
-
-                //create file path
-                string file = @"quotes.json";
-
-                //write quote to file
-                //string fileString = nameValue + "," + DateTime.Now.ToString("MM/dd/yyyy") + "," + widthValue + "," + depthValue + "," + drawersValue + "," + surfaceValue + "," + rushValue + "," + quotePriceString + ".";
-                try
-                {
-                    //creates file if it doesn't already exist (according to: https://stackoverflow.com/questions/10383053/create-file-if-file-does-not-exist)
-                    using (StreamWriter sw = File.AppendText(file))
-                    {
-                        //writes serialized object to JSON file
-                        sw.WriteLine(serializedQuote);
-                    };
-
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error Writing To File: " + ex);
-                }
-
-                quote.Show();
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("There was an Error Generating your Quote. Please try again.");
-            }
-        }
+        
 
 
         /********************************************************************
@@ -338,9 +259,96 @@ namespace MegaDesk
         }
 
 
+
+
         #endregion
 
+        private void addQuoteBtn2_Click_1(object sender, EventArgs e)
+        {
+            if (nameBool && widthBool && depthBool && drawersBool && canAccessRushPrices)
+            {
+                MessageBox.Show("Your quote has been generated!");
+                DisplayQuotes quote = new DisplayQuotes();
+
+                //get values of input from from and convert to string where necessary
+                nameValue = nameTB.Text;
+                widthValue = widthTB.Text;
+                depthValue = depthTB.Text;
+                drawersValue = drawersTB.Text;
+                surfaceValue = this.listBoxSurface.GetItemText(listBoxSurface.SelectedItem);
+                rushValue = this.listboxRush.GetItemText(listboxRush.SelectedItem);
 
 
+                //interpretation of rush selection
+                if (rushValue == "Normal 14 Days")
+                {
+                    rush = 0;
+                }
+                else if (rushValue == "Rush 7 Days")
+                {
+                    rush = 7;
+                }
+                else if (rushValue == "Rush 5 Days")
+                {
+                    rush = 5;
+                }
+                else
+                {
+                    rush = 3;
+                }
+
+
+                //convert width, depth, and drawers to Integers from decimals
+                widthInt = int.Parse(widthTB.Text);
+                depthInt = int.Parse(depthTB.Text);
+                drawersInt = int.Parse(drawersTB.Text);
+                surface = (DesktopMaterial)listBoxSurface.SelectedValue;
+                //create a new DeskQuote, passing information to DeskQuote.cs
+                DeskQuote newquote = new DeskQuote(nameValue, DateTime.Now.ToString("MM/dd/yyyy"), widthInt, depthInt, drawersInt, surface, rush);
+
+                //calculate the quote
+                quotePrice = newquote.GetQuote(rush);
+                quotePriceString = quotePrice.ToString();
+
+                //serialize newquote to be passed to the file.
+                string serializedQuote = JsonConvert.SerializeObject(newquote);
+
+                //create file path
+                string file = @"quotes.json";
+
+                //write quote to file
+                //string fileString = nameValue + "," + DateTime.Now.ToString("MM/dd/yyyy") + "," + widthValue + "," + depthValue + "," + drawersValue + "," + surfaceValue + "," + rushValue + "," + quotePriceString + ".";
+                try
+                {
+                    //creates file if it doesn't already exist (according to: https://stackoverflow.com/questions/10383053/create-file-if-file-does-not-exist)
+                    using (StreamWriter sw = File.AppendText(file))
+                    {
+                        //writes serialized object to JSON file
+                        sw.WriteLine(serializedQuote);
+                    };
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error Writing To File: " + ex);
+                }
+
+                quote.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("There was an Error Generating your Quote. Please try again.");
+            }
+
+        }
+
+        private void backbtn1_Click_1(object sender, EventArgs e)
+        {
+            MainMenu menu = new MainMenu();
+            this.Close();
+            menu.Show();
+        }
     }
 }
